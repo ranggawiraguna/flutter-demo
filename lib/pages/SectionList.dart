@@ -180,6 +180,13 @@ class _SectionListState extends State<SectionList> {
                                   child: Icon(
                                     Icons.keyboard_arrow_right_rounded,
                                     size: services.getSize(60),
+                                    shadows: [
+                                      BoxShadow(
+                                        blurRadius: 1,
+                                        spreadRadius: 1,
+                                        color: Colors.black.withOpacity(0.5),
+                                      )
+                                    ],
                                   ),
                                 ),
                               )
