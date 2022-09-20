@@ -1,7 +1,4 @@
-// ignore_for_file: file_names
-
 import 'package:flutter_demo/others/colors.dart';
-import 'package:flutter_demo/widgets/FlexSpace.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -25,9 +22,9 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: AppColors.deepBlack,
       body: Center(
           child: Row(
-        children: [
-          FlexSpace(150),
-          const Flexible(
+        children: const [
+          Spacer(flex: 150),
+          Flexible(
             flex: 730,
             child: FlutterLogo(
               size: double.infinity,
@@ -35,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
               textColor: Colors.white,
             ),
           ),
-          FlexSpace(200),
+          Spacer(flex: 200),
         ],
       )),
     );

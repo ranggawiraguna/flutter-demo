@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_demo/others/colors.dart';
-import 'package:flutter_demo/pages/Home.dart';
+import 'package:flutter_demo/pages/SectionList.dart';
 import 'package:flutter_demo/pages/SplashScreen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
     [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown],
   );
@@ -23,7 +24,7 @@ void main() {
           ),
           home: snapshot.connectionState == ConnectionState.waiting
               ? const SplashScreen()
-              : const Home(),
+              : const SectionList(),
         );
       },
     ),
