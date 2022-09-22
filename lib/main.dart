@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_demo/others/colors.dart';
 import 'package:flutter_demo/pages/SectionList.dart';
 import 'package:flutter_demo/pages/SplashScreen.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations(
-    [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown],
-  );
-
   runApp(
     FutureBuilder(
       future: FutureSplash.instance.initialize(),

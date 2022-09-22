@@ -46,7 +46,11 @@ class _ContentListState extends State<ContentList> {
             child: ElevatedButton(
               onPressed: () {
                 if (widget.list[index].containsKey('route')) {
-                  Navigator.of(context).push(widget.list[index]['route']);
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => widget.list[index]['route'],
+                    ),
+                  );
                 }
               },
               clipBehavior: Clip.hardEdge,

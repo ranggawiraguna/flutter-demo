@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/sections/HttpRequest/Dio/Dio.dart';
+import 'package:flutter_demo/sections/StateManagement/FlutterHooks/FlutterHooks.dart';
+import 'package:flutter_demo/sections/StateManagement/Riverpod/Riverpod.dart';
 
 final List<Map<String, dynamic>> content = [
   {
@@ -29,12 +32,13 @@ final List<Map<String, dynamic>> content = [
       },
       {
         "name": "Dio",
+        "route": const Dio(),
       }
     ],
   },
   {
     "title": "Interact",
-    "icon": Icons.accessibility_rounded,
+    "icon": Icons.settings_suggest_rounded,
     "color": const Color(0xFFFFDC7A),
     "list": <Map<String, dynamic>>[
       //
@@ -46,10 +50,10 @@ final List<Map<String, dynamic>> content = [
     "color": const Color(0xFFDCE59F),
     "list": <Map<String, dynamic>>[
       {
-        "name": "Project Stucture",
+        "name": "Project Architecture",
       },
       {
-        "name": "MVVM Architecture",
+        "name": "Project Stucture",
       },
     ],
   },
@@ -68,9 +72,11 @@ final List<Map<String, dynamic>> content = [
     "list": <Map<String, dynamic>>[
       {
         "name": "Flutter Hooks",
+        "route": const FlutterHooks(),
       },
       {
         "name": "Riverpod",
+        "route": const Riverpod(),
       },
     ],
   },
